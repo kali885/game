@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://s1njuj558g7v"]
+
+[ext_resource type="Script" uid="uid://doas607ukdjte" path="res://game.gd" id="1_wbfu4"]
+[ext_resource type="AudioStream" uid="uid://82p1c7s8x5h2" path="res://audio/Minimal_UI_pop_sound_#4-1790690005159.wav" id="2_xkndl"]
+[ext_resource type="AudioStream" uid="uid://letjtdrbpcwt" path="res://audio/clear_line_sound.ogg" id="3_u44n3"]
+[ext_resource type="AudioStream" uid="uid://bdxrn8120wddh" path="res://audio/bomb_sound.ogg" id="4_sb48q"]
+[ext_resource type="AudioStream" uid="uid://cuc3brb6frt72" path="res://audio/game_over_sound.ogg" id="5_t88pq"]
+[ext_resource type="AudioStream" uid="uid://vdp6bevehijs" path="res://audio/2.ogg" id="6_select"]
+[ext_resource type="AudioStream" uid="uid://8gsq2nsavoyf" path="res://audio/GameMusic.ogg" id="7_3mrqo"]
+
+[node name="Game" type="Node2D" unique_id=1157053350]
+script = ExtResource("1_wbfu4")
+
+[node name="PlaceSound" type="AudioStreamPlayer" parent="." unique_id=1716227532]
+stream = ExtResource("2_xkndl")
+
+[node name="ClearSound" type="AudioStreamPlayer" parent="." unique_id=1356316385]
+stream = ExtResource("3_u44n3")
+
+[node name="BombSound" type="AudioStreamPlayer" parent="." unique_id=1638077725]
+stream = ExtResource("4_sb48q")
+
+[node name="GameoverSound" type="AudioStreamPlayer" parent="." unique_id=435722029]
+stream = ExtResource("5_t88pq")
+
+[node name="SelectSound" type="AudioStreamPlayer" parent="." unique_id=885243775]
+stream = ExtResource("6_select")
+
+[node name="GameMusic" type="AudioStreamPlayer" parent="." unique_id=543598145]
+stream = ExtResource("7_3mrqo")
+autoplay = true
+parameters/looping = true
